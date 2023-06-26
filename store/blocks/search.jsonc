@@ -1,0 +1,46 @@
+{
+  "store.search": {
+    "blocks": [
+      "breadcrumb",
+      "search-result-layout"
+    ]
+  },
+  "search-result-layout": {
+    "blocks":[
+      "search-result-layout.desktop",
+      "search-result-layout.mobile",
+      "search-not-found-layout"
+    ]
+  },
+  "search-result-layout.desktop": {
+    "children": [
+      "breadcrumb.search",
+      "search-title.v2",
+      "order-by.v2",
+      "flex-layout.row#search",
+      "search-fetch-more"
+    ]
+  },
+  "flex-layout.row#search": {
+    "children": [
+      "flex-layout.col#left-search",
+      "flex-layout.col#right-search"
+    ]
+  },
+  "flex-layout.col#left-search": {
+    "props": {
+      "width": "20%"
+    },
+    "children": [
+      "filter-navigator.v3"
+    ]
+  },
+  "flex-layout.col#right-search": {
+    "children": [
+      "search-content"
+    ]
+  },
+  "search-not-found-layout": {
+    "children": ["not-found"]
+  }
+}

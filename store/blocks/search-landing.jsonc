@@ -1,0 +1,61 @@
+{
+    "store.custom#landing": {
+        "blocks": [
+            "image#landingbanner",
+            "search-result-layout.customQuery"
+        ]
+    },
+    "image#landingbanner": {
+        "props": {
+            "src": "https://wcm-cdn.wacom.com/-/media/graveyard/wacomdotcom/images/promo/createmore/shared/1400x250-message.jpg?h=250&iar=0&w=1400&rev=-1&hash=F6947C0F9E08585DD64E798DF42B2C10q",
+            "minWidth": "100%"
+        }
+    },
+    "search-result-layout.customQuery": {
+        "props": {
+            "querySchema": {
+                "orderByField": "OrderByReleaseDateDESC",
+             "hideUnavailableItems": true,
+                "maxItemsPerPage": 8,
+                "queryField": "Bebê",
+                "mapField": "ft",
+                "skusFilter": "ALL_AVAILABLE"
+            }
+        },
+        "blocks": ["search-result-layout.desktop#main"]
+    },
+    "search-result-layout.desktop#main": {
+        "children": [
+          "breadcrumb.search",
+          "search-title.v2",
+          "flex-layout.row#top",
+          "flex-layout.row#results",
+          "search-fetch-more"
+        ]
+    },
+    "flex-layout.row#top": {
+        "children": [
+          "total-products.v2",
+          "order-by.v2"
+        ]
+    },
+    "flex-layout.row#results": {
+        "children": [
+          "flex-layout.col#filter",
+          "flex-layout.col#search"
+        ]
+    },
+    "flex-layout.col#filter": {
+        "props": {
+          "width": "20%"
+        },
+        "children": [
+          "filter-navigator.v3"
+        ]
+    },
+    "flex-layout.col#search": {
+        "children": [
+          "search-content"
+        ]
+    }
+}

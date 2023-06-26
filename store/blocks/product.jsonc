@@ -1,0 +1,92 @@
+{
+  "store.product": {
+    "children": [
+      "condition-layout.product",
+      "breadcrumb",
+      "flex-layout.row#main"
+    ]
+  },
+  "condition-layout.product": {
+    "children": [
+      "condition.product#agua-pele"
+    ]
+  },
+  "condition.product#agua-pele": {
+    "props": {
+      "conditions": [
+        {
+          "subject": "productId",
+          "verb": "is",
+          "object": "248"
+        }
+      ]
+    },
+    "children": ["image#agua-pele-banner"]
+  },
+  "image#agua-pele-banner": {
+    "props": {
+      "src": "https://appliancetheme.vtexassets.com/assets/app/src/retroimage___92a8271aac7c51d2059193bdbe019016.jpg",
+      "width": "100%",
+      "height": "200px",
+      "blockClass": "cover"
+    }
+  },
+  "flex-layout.row#main": {
+    "props": {
+      "colGap": 2,
+      "rowGap": 1,
+      "marginTop": 4,
+      "marginBottom": 7,
+      "paddingTop": 7,
+      "paddingBottom": 7,
+      "blockClass": "product-main"
+    },
+    "children": [
+      "flex-layout.col#left",
+      "flex-layout.col#right"
+    ] 
+  },
+  "flex-layout.col#left": {
+    "children": [
+      "product-images"
+    ]
+  }, 
+  "flex-layout.col#right": {
+    "props": {
+      "preventVerticalStretch": true,
+      "verticalAlign": "middle"
+    },
+    "children": [
+      "product-name",
+      "product-price",
+      "product-separator",
+      "product-identifier.product",
+      "product-quantity",
+      "flex-layout.row#buy",
+      "shipping-simulator",
+      "share"
+    ]
+  },
+  "flex-layout.row#buy": {
+    "props": {
+      "marginBottom": 4
+    },
+    "children": ["add-to-cart-button"]
+  },
+  "product-price": {
+    "props": {
+      "showSavings": true,
+      "showListPrice": true
+    }
+  },
+  "share": {
+    "props": {
+      "social": {
+        "Twitter": false,
+        "Facebook": true,
+        "WhatsApp": true,
+        "Pinterest": true
+      }
+    }
+  }
+}
