@@ -1,0 +1,20 @@
+.container {
+    display: block;
+}
+
+.submenuList {
+    justify-content: flex-start;
+}
+
+.departmentLink {
+    padding-right: 33px;
+    overflow: hidden;
+}
+
+.departmentList {
+    height: auto;
+}
+
+.itemContainer--department {
+    margin-right: 1000px;
+}

@@ -1,0 +1,14 @@
+.footerLayout {
+    padding: 30px;
+    background-color: #fafafa;
+}
+
+@media screen and (max-width: 639.9px) {
+    .poweredByImage {
+        max-width: 100px;
+    }
+
+    .socialNetworkWrapper, .acceptedPaymentMethodContainer {
+        margin-bottom: 10px;
+    }
+}

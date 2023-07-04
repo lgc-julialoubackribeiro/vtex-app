@@ -13,12 +13,12 @@
     },
     "rich-text#about-title": {
         "props": {
-        "text": "# About Minimum Theme"
+        "text": "# Sobre nós"
         }
     },
     "rich-text#about-content": {
         "props": {
-        "text": "### *This is the VTEX Minimum Theme* \n you can use it to test blocks usage and build your first store from scratch."
+        "text": "### *Julia's Decor* \n Desde 2023 nosso trabalho é selecionar as melhores decorações para transformar a sua casa em um lugar encantador."
         }
     },
     "image#about-us": {

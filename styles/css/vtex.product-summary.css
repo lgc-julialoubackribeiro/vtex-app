@@ -1,0 +1,46 @@
+.productBrand {
+    color: #000;
+}
+
+.element {
+    padding: 10px;
+    border: 2px solid #fafafa;
+    border-radius: 10px;
+    background-color: #fafafa;
+    margin: 0 5px;
+}
+
+.element--listGrid {
+    margin-left: 40px;
+}
+
+.sellingPrice {
+    color: #000;
+}
+
+.buyButton {
+    background-color: #e68e94;
+}
+
+.containerNormal--listGrid {
+    max-width: 100% !important;
+}
+
+.skuNameContainer--list {
+    color: #000;
+    padding: 0 20px;
+}
+
+.skuName--list::before {
+   content: "\ SKU: ";
+}
+
+@media screen and (max-width: 639.9px) {
+    .container {
+        max-width: 90% !important;
+    }
+
+    .image {
+        max-height: 100%;
+    }
+}

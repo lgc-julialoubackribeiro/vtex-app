@@ -6,9 +6,7 @@
     "blocks": ["header-layout.desktop", "header-layout.mobile"]
   },
   "header-layout.desktop": {
-    "children": [
-      "sticky-layout#desktop"
-    ]
+    "children": ["sticky-layout#desktop"]
   },
   "sticky-layout#desktop": {
     "props": {
@@ -25,7 +23,9 @@
       "fullWidth": true
     },
     "children": [
+      "drawer",
       "flex-layout.col#logo-desktop",
+      "flex-layout.col#brand",
       "flex-layout.col#spacer",
       "search-bar",
       "locale-switcher",
@@ -48,8 +48,17 @@
     "props": {
       "title": "Logo",
       "href": "/",
-      "url": "https://logicinfo.com/wp-content/uploads/2022/05/logo-logic.svg",
-      "width": "80"
+      "url": "https://img.icons8.com/?size=512&id=0poZ2aC6dx-6&format=png",
+      "width": "50"
+    }
+  },
+  "flex-layout.col#brand": {
+    "children": ["rich-text#brand"]
+  },
+  "rich-text#brand": {
+    "props": {
+      "text": "Julia's Decor",
+      "blockClass": "brand"
     }
   },
   "header-layout.mobile": {
@@ -73,7 +82,26 @@
       "fullWidth": true
     }
   },
+  "login": {
+    "props": {
+     "showIconProfile": true,
+     "hideIconLabel": true,
+     "logInButtonBehavior": "link"
+    }
+  },
   "drawer": {
-    "children": []
+    "children": ["flex-layout.row#categorias"]
+  },
+  "flex-layout.row#categorias": {
+    "children": [
+      "category-menu#teste"
+    ]
+  },
+  "category-menu#teste": {
+    "props": {
+      "showAllDepartments": false,
+      "showSubcategories": true,
+      "menuDisposition": "left"
+    }
   }
 }

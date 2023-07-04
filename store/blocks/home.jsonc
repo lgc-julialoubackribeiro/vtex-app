@@ -1,199 +1,63 @@
 {
   "store.home": { 
     "blocks": [
-      "rich-text",
       "info-card#button-right",
-      "info-card#button-left",
-      "flex-layout.row",
-      "slider-layout#home",
-      "responsive-layout.desktop#desktop", 
-      "responsive-layout.mobile#mobile",
-      "tab-layout#home",
+      "rich-text#main",
       "list-context.product-list",
-      "stack-layout#cta"
+      "__fold__",
+      "slider-layout#images",
+      "info-card#button-left",
+      "newsletter-form"
     ]
-  },
-  "rich-text": { 
-    "props": { 
-      "text": "Loja Julia Louback Ribeiro",
-      "textAlignment": "CENTER",
-      "textPosition": "CENTER",
-      "font": "t-heading-3"
-    }
   },
   "info-card#button-right": {
     "props": {
       "isFullModeStyle": false,
-      "textPosition": "right",
-      "imageUrl": "https://appliancetheme.vteximg.com.br/arquivos/cozinha-rosa-min.png",
-      "headline": "Vintage Pink",
-      "subhead": "Give your kitchen a boho style adding vintage apparels.<br>Available until January 2020.",
-      "callToActionMode": "button",
-      "callToActionText": "Explore",
-      "callToActionUrl": "/sale/d",
-      "textAlignment": "center"
-    }
-  },
-  "info-card#button-left": {
-    "props": {
-      "isFullModeStyle": false,
-      "headline": "Shining chrome",
-      "subhead": "Give your kitchen a cool style adding warm metallic finishes.<br>Available until December 2020",
-      "callToActionText": "Go to Collection",
-      "callToActionMode": "link",
-      "imageUrl": "https://appliancetheme.vteximg.com.br/arquivos/cozinha-cinza-min.png",
       "textPosition": "left",
+      "imageUrl": "https://appliancetheme.vteximg.com.br/arquivos/cozinha-rosa-min.png",
+      "headline": "Julia's Decor",
+      "subhead": "Sua casa com estilo encantador",
+      "callToActionMode": "button",
+      "callToActionText": "Descubra",
+      "callToActionUrl": "/sale/d",
       "textAlignment": "center",
-      "blockClass": "vintage"
+      "blockClass": "main"
     }
   },
-  "flex-layout.row":{
-    "children": [
-      "info-card#rethink",
-      "flex-layout.col"
-    ]
-  },
-
- "info-card#rethink": {
+  "rich-text#main": {
     "props": {
-      "imageUrl": "https://appliancetheme.vteximg.com.br/arquivos/utensilios-cozinha-min.png",
-      "isFullModeStyle": true,
-      "headline": "Time to rethink your kitchen",
-      "callToActionText": "Discover",
-      "textPosition": "center"
-    }
-  },
-  "flex-layout.col": {
-    "children": [
-      "image#electronics",
-      "image#major-appliance"
-    ]
-  },
-  "image#electronics": {
-    "props": {
-      "src": "https://appliancetheme.vteximg.com.br/assets/vtex.file-manager-graphql/images/electronics_banner___25d69b49f8224b369375e68513b4d593.png",
-      "maxWidth": "100%"
-    }
-  },
-  "image#major-appliance": {
-    "props": {
-      "src": "https://appliancetheme.vteximg.com.br/assets/vtex.file-manager-graphql/images/major_appliance_banner___bb10093866a127345ddfbcca3efa5022.png",
-      "maxWidth": "100%"
-    }
-  },
-  "responsive-layout.desktop#desktop": {
-    "children": [
-      "rich-text#desktop",
-      "image#desktop"
-    ]
-  },
-  "responsive-layout.mobile#mobile": {
-    "children": [
-      "rich-text#mobile",
-      "image#mobile"
-    ]
-  },
-  "rich-text#desktop": {
-    "props": {
-      "text": "# Your Coffee, Your Way \n ### New Coffee Makers Collection (I'm on desktop)",
-      "textPosition": "CENTER",
-      "textAlignment": "CENTER"
-    }
-  },
-  "rich-text#mobile": {
-    "props": {
-      "text": "### Your Coffee, Your Way \n #### New Coffee Makers Collection (I'm on mobile)",
-      "textPosition": "CENTER",
-      "textAlignment": "CENTER"
-    }
-  },
-  "image#desktop": {
-    "props": {
-      "src": "https://appliancetheme.vteximg.com.br/arquivos/Responsive-Image-Desktop.jpg?q=1",
-      "link": {
-        "url": "/small-appliances/coffee-makers"
-      } ,
-      "alt": "Coffee Makers Collection",
-      "maxWidth": "100%"
-    }
-  },
-  "image#mobile": {
-    "props": {
-      "src": "https://appliancetheme.vteximg.com.br/arquivos/Responsive-Image-Mobile.jpg?q=1",
-      "link": {
-        "url": "/small-appliances/coffee-makers"
-      } ,
-      "alt": "Coffee Makers Collection",
-      "maxWidth": "100%"
-    }
-  },
-  "tab-layout#home": {
-    "children": [
-      "tab-list#home",
-      "tab-content#home"
-    ]
-  },
-  "tab-list#home": {
-    "children": [
-      "tab-list.item#home1",
-      "tab-list.item#home2"
-    ]
-  },
-  "tab-list.item#home1": {
-    "props": { 
-      "tabId": "majorAppliances",
-      "label": "Major Appliances",
-      "defaultActiveTab": true
-    }
-  },
-  "tab-list.item#home2": {
-    "props": { 
-      "tabId": "eletronics",
-      "label": "Eletronics"
-    }
-  },
-  "tab-content#home": {
-    "children": [
-      "tab-content.item#home1",
-      "tab-content.item#home2"
-    ]
-  },
-  "tab-content.item#home1": {
-    "children": ["rich-text#home1"],
-    "props": {
-      "tabId": "majorAppliances"
-    }
-  },
-  "tab-content.item#home2": {
-    "children": ["rich-text#home2"],
-    "props": {
-      "tabId": "eletronics"
-    }
-  },
-  "rich-text#home1": {
-    "props": {
-      "text": "Área do conteúdo da tab-list.item com  tabId = majorAppliances",
-      "textPosition": "CENTER",
-      "font": "t-heading-3"
-    }
-  },
-  "rich-text#home2": {
-    "props": {
-      "text": "Área do conteúdo da tab-list.item com  tabId = electronics",
-      "textPosition": "CENTER",
-      "font": "t-heading-3"
+      "text": "### Produtos Mais Vendidos",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
     }
   },
   "list-context.product-list": {
-    "blocks": ["product-summary.shelf"],
-    "children": ["slider-layout"]
+    "blocks": ["product-summary.shelf#main"],
+    "children": ["slider-layout#main"],
+    "props": {
+      "blockClass": "produtos",
+      "category": "8",
+      "orderBy": "OrderByPriceASC"
+    }
   },
-  "product-summary.shelf": {
+  "product-summary.shelf#main": {
     "children": [
       "modal-trigger#quickview",
       "product-summary-name",
-      "product-selling-price"
+      "product-rating-inline",
+      "product-summary-space",
+      "product-summary-price",
+      "add-to-cart-button"
     ]
+  },
+  "product-summary-name": {
+    "props": {
+      "showFieldsProps": {
+        "showProductReference": false,
+        "showBrandName": false,
+        "showSku": false
+      }
+    }
   },
   "modal-trigger#quickview": {
     "children": [
@@ -201,38 +65,141 @@
       "modal-layout#quickview"
     ]
   },
+  "product-summary-image": {
+    "props": {
+      "showBadge": true,
+      "showCollections": true,
+      "height": 220
+    }
+  },
   "modal-layout#quickview": { 
+    "props": {
+      "blockClass": "quickView"
+    },
     "children": [
       "product-summary-name",
       "product-images",
       "product-summary-sku-selector",
-      "product-summary-quantity",
+      "product-summary-quantity#quickview",
       "add-to-cart-button"
     ]
   },
-  "stack-layout#cta": {
-    "children": [
-      "image#cta",
-      "link#cta"
-    ]
-  },
-  "image#cta": {
+  "product-summary-quantity#quickview": {
     "props": {
-      "blockClass": "cover",
-      "width": "100%",
-      "height": 400,
-      "src": "https://appliancetheme.vtexassets.com/assets/app/src/appliancecat___1b7592b49667c6a89203a0997e06bc87.jpg"
+      "blockClass": "quickView"
     }
   },
-  "link#cta": {
+  "slider-layout#main": {
     "props": {
-      "displayMode": "button",
-      "buttonProps": {
-        "variant": "primary",
-        "size": "large"
-      },
-      "href": "/washer",
-      "label": "Check these awesome discounts"
+      "showPaginationDots": "never",
+      "infinite": true,
+      "fullWidth": false,
+      "itemsPerPage": {
+        "desktop": 4,
+        "tablet": 3,
+        "phone": 1
+      }
+    }
+  },
+  "slider-layout#images": {
+    "props": {
+      "showPaginationDots": "never"
+    },
+    "children": [
+      "image#1-image",
+      "image#2-image", 
+      "image#3-image", 
+      "image#4-image",
+      "image#5-image",
+      "image#6-image"
+    ]
+  },
+  "image#1-image": {
+    "props": {
+      "src": "https://img.freepik.com/fotos-gratis/bela-foto-de-uma-cozinha-moderna-casa-e-sala-de-jantar_181624-2870.jpg?w=1000&t=st=1688045175~exp=1688045775~hmac=e2e7f9fd87a0565bcd18674712dba25bf70b951c5548c5856a81baa95b8e0674"
+    }
+  },
+  "image#2-image": {
+    "props": {
+      "src": "https://img.freepik.com/fotos-gratis/pano-de-fundo-do-produto-de-cozinha-imagem-de-fundo-interior_53876-143215.jpg?w=1000&t=st=1688044974~exp=1688045574~hmac=0a6289af8673e2ac295d8f05887041d7b112f737aac5dce08154562fd7f7f689"
+    }
+  },
+  "image#3-image": {
+    "props": {
+      "src": "https://img.freepik.com/fotos-gratis/quarto-vazio-moderno-com-mobilia_23-2149178335.jpg?w=1000&t=st=1688045461~exp=1688046061~hmac=32db8a94ab5ddeaa8ae16269733b9dcfb39744939765ac66f0c51eeb75ddad76"
+    }
+  },
+  "image#4-image": {
+    "props": {
+      "src": "https://img.freepik.com/fotos-gratis/interior-de-cozinha-escandinavo-moderno-e-elegante-com-acessorios-de-cozinha-cozinha-branca-brilhante-com-utensilios-domesticos_169016-4791.jpg?w=1000&t=st=1688045680~exp=1688046280~hmac=5f14566aa13b0fd77e7a878d9b73d5a44ceee095dcfdafe4c2b36176ceb4a545"
+    }
+  },
+  "image#5-image": {
+    "props": {
+      "src": "https://img.freepik.com/fotos-gratis/3d-rendering-branco-minimal-cozinha-com-decoracao-de-madeira_105762-2208.jpg?w=1000&t=st=1688045100~exp=1688045700~hmac=417ac41fa640ee21d67eb99b38f99d225b0e6cf344e25f3eaa2865d0f5e043fa"
+    }
+  },
+  "image#6-image": {
+    "props": {
+      "src": "https://img.freepik.com/fotos-gratis/bela-foto-de-uma-cozinha-de-casa-moderna_181624-2943.jpg?w=1000&t=st=1688046034~exp=1688046634~hmac=672f78d7220fc84309333bb449ab9458e937797b94333c8de2ab8bab0b00808d"
+    }
+  },
+  "info-card#button-left": {
+    "props": {
+      "isFullModeStyle": true,
+      "textPosition": "center",
+      "imageUrl": "https://img.freepik.com/fotos-gratis/quarto-vazio-moderno-com-mobilia_23-2149178335.jpg?w=1000&t=st=1688045461~exp=1688046061~hmac=32db8a94ab5ddeaa8ae16269733b9dcfb39744939765ac66f0c51eeb75ddad76",
+      "headline": "Visualize nossos lançamentos",
+      "callToActionMode": "button",
+      "callToActionText": "Visualizar",
+      "callToActionUrl": "/sale/d",
+      "textAlignment": "center",
+      "blockClass": "main-center"
+    }
+  },
+  "newsletter-form": {
+    "children": [
+      "rich-text#newsletter",
+      "flex-layout.row#1-row"
+    ]
+  },
+  "flex-layout.row#1-row": {
+    "children": [
+      "flex-layout.col#1-col",
+      "flex-layout.col#2-col",
+      "flex-layout.col#3-col"
+    ],
+    "props": {
+      "blockClass": "newsletter-line"
+    }
+  },
+  "rich-text#newsletter": {
+    "props": {
+      "text": "### Inscreva-se na nossa newsletter \n ##### Fique por dentro de todos os lançamentos",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "blockClass": "newsletter-head"
+    }
+  },
+  "flex-layout.col#1-col": {
+    "children": ["newsletter-input-email"],
+    "props": {
+      "blockClass": "newsletter-line",
+      "width": "40%"
+    }
+  },
+  "flex-layout.col#2-col": {
+    "children": ["newsletter-input-name"],
+    "props": {
+      "width": "40%",
+      "blockClass": "newsletter-line"
+    }
+  },
+  "flex-layout.col#3-col": {
+    "children": ["newsletter-submit"],
+    "props": {
+      "width": "20%",
+      "blockClass": "newsletter-line"
     }
   }
 }

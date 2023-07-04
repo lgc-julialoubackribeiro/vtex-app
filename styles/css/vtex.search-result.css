@@ -1,0 +1,36 @@
+.galleryTitle--layout {
+    color: #e68e94;
+    margin: 0 auto;
+}
+
+.galleryLayoutOptionButton {
+    color: #e68e94;
+    padding: 0 10px;
+}
+
+@media screen and (min-width: 640px) and (max-width: 1023.9px){
+    .resultGallery {
+        margin-top: -70px;
+    }
+}
+
+@media screen and (max-width: 1025.9px){
+    .layoutSwitcher {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .container--layout {
+        margin: 0 20px;
+    }
+    
+    .gallery--grid, .gallery--list {
+        margin-top: -75px;
+    }
+
+    .gallery--grid {
+        margin-left: 20px;
+    }
+}
+

@@ -1,34 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
 .imageElement--cover {
     object-fit: cover;
 }
 
-.infoCardHeadline {
-    font-family: serif;
+.infoCardHeadline--main {
+    font-family: 'Great Vibes', cursive;
     font-size: 2.25rem;
     font-weight: bold;
-    color: black;
-    border: 2px solid black;
+    border: 2px solid #616161;
     padding: 24px;
+    color: #e68e94;
 }
 
-.infoCardCallActionContainer :global(.vtex-button) {
-    color: gray;
+.infoCardSubhead--main {
+    color: #000;
+}
+
+.infoCardCallActionContainer--main :global(.vtex-button) {
+    color: #e68e94;
     background-color: white;
-    border: transparent;
+    border: 2px solid #e68e94;
 }
 
 .infoCardCallActionContainer :global(.vtex-button):hover {
     color: white;
-    background-color: blue;
-    border: transparent;
+    background-color: #e68e94;
+    border: 2px solid #e68e94;
 }
 
-.infoCardContainer--vintage {
-    background-color: #f0f0f0;
+.infoCardHeadline--main-center {
+    font-family: Fabriga, -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, ubuntu, roboto, noto, segoe ui, arial, sans-serif;
+    font-size: 2.5rem;
+    font-weight: bold;
+    padding: 24px;
+    border: 2px solid #e68e94;
+    background-color: #fff;
+    opacity: 0.8;
+    color: #000;
 }
 
-.infoCardContainer {
-    max-width: 1260px;
-    margin: 0 auto;
-    padding: 0;
+.productDescriptionTitle--product-main {
+    color: #e68e94;
+    font-weight: bold;
+}
+
+.productDescriptionContainer--product-main {
+    margin: 0 40px 50px 30px;
+}
+
+.content--product-main {
+    text-align: justify;
+}
+
+.showMoreButton--product-main {
+    background-color: #e68e94;
+    padding: 10px 15px;
+    color: #fff;
+}
+
+@media screen and (max-width: 1023px){
+    .logoImage {
+        margin-top: 7px;
+    }
+
+    .productDescriptionContainer--product-main {
+        margin-left: 30px;
+        margin-right: 30px;
+    }    
 }

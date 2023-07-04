@@ -1,0 +1,8 @@
+.newsletterForm {
+    background-color: #fafafa;
+    padding-bottom: 20px;
+}
+
+.emailInputContainer, .nameInputContainer {
+    margin: 0 10px 10px 0px;
+}
