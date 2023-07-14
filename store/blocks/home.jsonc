@@ -7,7 +7,8 @@
       "__fold__",
       "slider-layout#images",
       "info-card#button-left",
-      "newsletter-form"
+      "newsletter-form",
+      "back-to-top-button"
     ]
   },
   "info-card#button-right": {
@@ -19,7 +20,7 @@
       "subhead": "Sua casa com estilo encantador",
       "callToActionMode": "button",
       "callToActionText": "Descubra",
-      "callToActionUrl": "/sale/d",
+      "callToActionUrl": "/Casa",
       "textAlignment": "center",
       "blockClass": "main"
     }
@@ -28,7 +29,8 @@
     "props": {
       "text": "### Produtos Mais Vendidos",
       "textAlignment": "CENTER",
-      "textPosition": "CENTER"
+      "textPosition": "CENTER",
+      "blockClass": "best-seller"
     }
   },
   "list-context.product-list": {
@@ -42,6 +44,7 @@
   },
   "product-summary.shelf#main": {
     "children": [
+      "add-to-list-btn",
       "modal-trigger#quickview",
       "product-summary-name",
       "product-rating-inline",
@@ -200,6 +203,12 @@
     "props": {
       "width": "20%",
       "blockClass": "newsletter-line"
+    }
+  },
+  "back-to-top-button":{
+    "props":{
+      "displayThreshold": 300,
+      "display": "caret-icon"
     }
   }
 }

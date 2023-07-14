@@ -131,7 +131,7 @@
     "text": {
       "action-primary": "#e68e94",
       "action-secondary": "#e68e94",
-      "link": "#616161",
+      "link": "#9e9e9e",
       "emphasis": "#f71963",
       "disabled": "#979899",
       "success": "#8bc34a",
@@ -140,7 +140,7 @@
       "danger--faded": "#ffe6e6",
       "warning": "#ffb100",
       "warning--faded": "#fff6e0",
-      "muted-1": "#727273",
+      "muted-1": "#9e9e9e",
       "muted-2": "#979899",
       "muted-3": "#cacbcc",
       "muted-4": "#e3e4e6",
@@ -152,7 +152,7 @@
     "hover-text": {
       "action-primary": "#072c75",
       "action-secondary": "#e68e94",
-      "link": "#0c389f",
+      "link": "#e0e0e0",
       "emphasis": "#dd1659",
       "success": "#8bc34a",
       "success--faded": "#eafce3",

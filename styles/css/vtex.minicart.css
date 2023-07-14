@@ -1,3 +1,15 @@
+.minicartContentContainer, .drawer {
+    background-color: var(--background-third);
+}
+
+.minicartProductListContainer, .minicartContentContainer {
+    background-color: var(--background-third);
+}
+
+.minicartTitle {
+    color: var(--text-primary);
+}
+
 @media screen and (max-width: 1023px) {
     .openIconContainer {
         padding-top: 14px;

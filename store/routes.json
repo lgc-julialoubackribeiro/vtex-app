@@ -4,5 +4,11 @@
   },
   "store.custom#landing": {
     "path": "/landing"
+  },
+  "store.custom#blog": {
+    "path": "/blog"
+  },
+  "store.custom#gerenciar-blog": {
+    "path": "/gerenciar-blog"
   }
 }

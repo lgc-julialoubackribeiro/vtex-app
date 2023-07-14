@@ -6,7 +6,10 @@
     "blocks": ["header-layout.desktop", "header-layout.mobile"]
   },
   "header-layout.desktop": {
-    "children": ["sticky-layout#desktop"]
+    "children": ["component-parent#home"]
+  },
+  "component-parent#home": {
+    "children": ["notification.bar","sticky-layout#desktop"]
   },
   "sticky-layout#desktop": {
     "props": {
@@ -27,6 +30,7 @@
       "flex-layout.col#logo-desktop",
       "flex-layout.col#brand",
       "flex-layout.col#spacer",
+      "change-color",
       "search-bar",
       "locale-switcher",
       "login",
@@ -72,6 +76,7 @@
       "drawer",
       "logo",
       "flex-layout.col#spacer",
+      "change-color",
       "login",
       "minicart.v2"
     ],
@@ -102,6 +107,11 @@
       "showAllDepartments": false,
       "showSubcategories": true,
       "menuDisposition": "left"
+    }
+  },
+  "notification.bar": {
+    "props": {
+      "content": "Frete grátis para a Região Sul (Compras acima de R$ 150,00)"
     }
   }
 }

@@ -14,13 +14,31 @@
   },
   "flex-layout.row#footer-desktop": {
     "children": [
+      "link#about",
+      "link#blog",
       "social-networks",
       "accepted-payment-methods",
       "powered-by"
     ]
   },
+  "link#about": {
+    "props": {
+      "label": "Sobre nós",
+      "href": "/about-us",
+      "width": "20%"
+    }
+  },
+  "link#blog": {
+    "props": {
+      "label": "Blog Julia's Decor",
+      "href": "/blog",
+      "width": "20%"
+    }
+  },
   "flex-layout.row#footer-mobile": {
     "children": [
+      "link#about",
+      "link#blog",
       "social-networks",
       "accepted-payment-methods",
       "powered-by"
@@ -28,12 +46,11 @@
   },
   "social-networks": {
     "props": {
-      "showInColor": true,
+      "showInColor": false,
       "socialNetworks": [
         { "url": "https://facebook.com/foo", "name": "Facebook" },
         { "url": "https://twitter.com/foo", "name": "Twitter" },
         { "url": "https://instagram.com/foo", "name": "Instagram" },
-        { "url": "https://pinterest.com/foo", "name": "Pinterest" },
         { "url": "https://youtube.com/foo", "name": "Youtube" },
         { "url": "https://linkedin.com/foo", "name": "LinkedIn" }
       ]
@@ -42,12 +59,12 @@
   "accepted-payment-methods": {
     "props": {
       "paymentMethods": ["mastercard", "visa", "diners club"],
-      "showInColor": true
+      "showInColor": false
     }
   },
   "powered-by": {
     "props": {
-      "showInColor": true,
+      "showInColor": false,
       "width": "10%"
     }
   }

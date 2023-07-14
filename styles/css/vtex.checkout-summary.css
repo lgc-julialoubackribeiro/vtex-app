@@ -1,0 +1,7 @@
+.summaryItemLabel, .price {
+    color: var(--text-primary);
+}
+
+.summarySmallDisclaimer {
+    color: var(--text-secondary);
+}

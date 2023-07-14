@@ -4,9 +4,19 @@
 }
 
 .flexRowContent--product-main {
-    padding: 0 20px;
+    background-color: var(--background-third);
+    margin: 0px;
+    padding: 20px 20px;
 }
 
 .flexRowContent--main-header-mobile {
-    background-color: #fafafa;
+    background-color: var(--background-secondary);
+}
+
+.flexRow--about-us {
+    background-color: var(--background-third);
+}
+
+.flexCol--about-us {
+    padding: 0px 40px;
 }

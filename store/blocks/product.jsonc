@@ -51,10 +51,11 @@
       "marginLeft": 4
     },
     "children": [
-      "product-brand",
-      "product-name",
-      "product-sku-attributes",
-      "product-price",
+      "add-to-list-btn",
+      "vtex.store-components:product-brand",
+      "vtex.store-components:product-name",
+      "vtex.store-components:product-sku-attributes",
+      "vtex.store-components:product-price",
       "product-separator",
       "product-identifier.product",
       "product-quantity",

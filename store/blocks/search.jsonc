@@ -206,7 +206,7 @@
   "flex-layout.col#secondCol": {
     "children": [
       "product-summary-name",
-      "product-brand",
+      "vtex.store-components:product-brand",
       "product-rating-inline",
       "product-summary-space",
       "product-identifier.product",

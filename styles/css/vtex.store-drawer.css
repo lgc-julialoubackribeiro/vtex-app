@@ -2,6 +2,15 @@
     overflow: hidden;
 }
 
+.drawerContent {
+    background-color: var(--background-third);
+}
+
+.closeIconButton {
+    color: var(--text-secondary);
+}
+
 .openIconContainer {
     margin-top: 10px;
+    color: var(--text-secondary);
 }

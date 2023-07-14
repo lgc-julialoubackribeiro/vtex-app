@@ -5,3 +5,7 @@
 .quantitySelectorContainer--quickView {
     margin-top: 10px;
 }
+
+.quantitySelectorTitle {
+    color: var(--text-third);
+}

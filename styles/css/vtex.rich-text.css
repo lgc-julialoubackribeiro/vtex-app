@@ -3,4 +3,22 @@
 .wrapper--brand {
     margin-top: 5px;
     font-family: 'Great Vibes', cursive;
+    color: var(--text-primary);
+}
+
+.container--best-seller {
+    background-color: var(--background-third);
+    color: var(--text-primary);
+}
+
+.container--newsletter-head {
+    color: var(--text-primary);
+}
+
+.paragraph--layout-option {
+    color: var(--text-third);
+}
+
+.wrapper--about-us {
+    color: var(--text-primary);
 }

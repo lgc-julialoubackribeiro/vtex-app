@@ -9,10 +9,12 @@
 .departmentLink {
     padding-right: 33px;
     overflow: hidden;
+    color: var(--text-secondary);
 }
 
 .departmentList {
     height: auto;
+    background-color: var(--background-third);
 }
 
 .itemContainer--department {

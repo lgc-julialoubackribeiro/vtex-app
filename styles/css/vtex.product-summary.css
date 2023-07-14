@@ -1,12 +1,16 @@
-.productBrand {
-    color: #000;
+.productBrand, .sellingPrice {
+    color: var(--text-secondary);
+}
+
+.item {
+    background-color: var(--background-primary);
 }
 
 .element {
     padding: 10px;
-    border: 2px solid #fafafa;
+    border: 2px solid var(--background-secondary);
     border-radius: 10px;
-    background-color: #fafafa;
+    background-color: var(--background-secondary);
     margin: 0 5px;
 }
 
@@ -14,12 +18,8 @@
     margin-left: 40px;
 }
 
-.sellingPrice {
-    color: #000;
-}
-
 .buyButton {
-    background-color: #e68e94;
+    background-color: var(--background-primary);
 }
 
 .containerNormal--listGrid {

@@ -1,8 +1,9 @@
 .newsletterForm {
-    background-color: #fafafa;
+    background-color: var(--background-third);
     padding-bottom: 20px;
 }
 
 .emailInputContainer, .nameInputContainer {
     margin: 0 10px 10px 0px;
+    background-color: transparent;
 }

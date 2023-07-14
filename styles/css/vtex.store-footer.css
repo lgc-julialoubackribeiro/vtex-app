@@ -1,6 +1,6 @@
 .footerLayout {
     padding: 30px;
-    background-color: #fafafa;
+    background-color: var(--background-secondary);
 }
 
 @media screen and (max-width: 639.9px) {

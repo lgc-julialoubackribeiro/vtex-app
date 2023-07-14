@@ -28,12 +28,12 @@
         "children": [
           "breadcrumb.search",
           "search-title.v2",
-          "flex-layout.row#top",
+          "flex-layout.row#top-search",
           "flex-layout.row#results",
           "search-fetch-more"
         ]
     },
-    "flex-layout.row#top": {
+    "flex-layout.row#top-search": {
         "children": [
           "total-products.v2",
           "order-by.v2"

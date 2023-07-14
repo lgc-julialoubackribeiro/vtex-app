@@ -1,0 +1,11 @@
+.productName {
+    color: var(--text-primary);
+}
+
+.productPrice {
+    color: var(--text-primary);
+}
+
+.deleteIcon {
+    color: var(--text-third);
+}
